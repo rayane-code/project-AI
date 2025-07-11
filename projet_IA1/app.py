@@ -40,3 +40,4 @@ st.pyplot(fig3)
 st.header("Carte géographique des maisons")
 st.map(df[['latitude', 'longitude']])
 
+
