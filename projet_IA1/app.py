@@ -25,7 +25,7 @@ fig1, ax1 = plt.subplots()
 sns.histplot(df['median_house_value'], bins=50, kde=False, ax=ax1)
 st.pyplot(fig1)
 
-st.header("Correlations avec le prix")
+st.header("Corelations avec le prix")
 fig2, ax2 = plt.subplots(figsize=(10, 8))
 numeric_df = df.select_dtypes(include=['number'])  
 sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm', ax=ax2)
@@ -40,6 +40,6 @@ st.pyplot(fig3)
 st.header("Carte geographique des maisons")
 st.map(df[['latitude', 'longitude']])
 
-#https://github.com/rayane-code/project-AI.git
+#https://github.com/rayane-code/project-AI.git#
 
 
